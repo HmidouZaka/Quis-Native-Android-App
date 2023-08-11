@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -21,78 +22,26 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.projectbyzakaria.quizapp.R
 
-data class Question(val text: String, val answers: List<String>, val correctAnswerIndex: Int)
-
 @Composable
-fun QuizScreen(questions: List<Question>) {
-    var currentQuestionIndex by remember { mutableStateOf(0) }
-    var selectedAnswerIndex by remember { mutableStateOf(-1) }
-
-    val currentQuestion = questions[currentQuestionIndex]
-
-    Column(
-        modifier = Modifier.fillMaxSize(),
-        horizontalAlignment = Alignment.CenterHorizontally
+fun QuizScreen(
+    modifier: Modifier = Modifier,
+) {
+    Surface(
+        modifier = modifier,
     ) {
-        Text(text = currentQuestion.text, style = MaterialTheme.typography.bodyLarge)
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Text(
+            text = "10/20",
 
-        currentQuestion.answers.forEachIndexed { index, answer ->
-            AnswerButton(
-                text = answer,
-                isSelected = index == selectedAnswerIndex,
-                onClick = { selectedAnswerIndex = index }
-            )
-
-            Spacer(modifier = Modifier.height(8.dp))
-        }
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        Button(
-            onClick = {
-                if (selectedAnswerIndex != -1) {
-                    val isCorrect = selectedAnswerIndex == currentQuestion.correctAnswerIndex
-                    // Handle correct/incorrect logic here
-
-                    // Move to the next question
-                    if (currentQuestionIndex < questions.size - 1) {
-                        currentQuestionIndex++
-                        selectedAnswerIndex = -1
-                    }
-                }
-            }
-        ) {
-            Text(text = "SSSSSSSS")
-        }
-    }
-}
-
-@Composable
-fun AnswerButton(text: String, isSelected: Boolean, onClick: () -> Unit) {
-    Button(
-        onClick = onClick,
-        modifier = Modifier.fillMaxWidth(),
-        colors = ButtonDefaults.buttonColors(
-            containerColor = if (isSelected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.primary
         )
-    ) {
-        Text(text = text)
+        
+
     }
 }
 
-@Preview
-@Composable
-fun PreviewQuizScreen() {
-    val questions = listOf(
-        Question(
-            text = "What is the capital of France?",
-            answers = listOf("Paris", "London", "Berlin", "Madrid"),
-            correctAnswerIndex = 0
-        ),
-        // Add more questions here
-    )
 
-    QuizScreen(questions = questions)
+@Preview(showBackground = true)
+@Composable
+fun QuizScreenPreview() {
+    QuizScreen(Modifier.fillMaxSize())
 }
