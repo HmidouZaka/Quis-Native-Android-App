@@ -5,6 +5,7 @@ import kotlinx.coroutines.flow.Flow
 
 interface Caches {
     suspend fun getCurrentUserLevel(): Flow<UserCache>
+    suspend fun setCurrentUserLevel(level:Int)
 
     suspend fun setPaintsForLevelOne(paint: Int)
 

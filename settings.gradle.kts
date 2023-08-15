@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Quiz App"
 include(":app")
+include(":benchmark")

@@ -1,5 +1,6 @@
 package com.projectbyzakaria.quizapp.ui.components
 
+import android.util.Log
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -35,17 +36,22 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.ViewModel
+import com.projectbyzakaria.quizapp.ui.viewmodels.QuizViewModel
+import kotlin.math.log
 
 @Composable
 fun PaintsHeader(
     modifier: Modifier = Modifier,
     numberOfQuestion: ()->Int,
     targetPaint: ()->Int,
-    timer: ()->Int,
+    maxTime:Int,
+    viewModel: QuizViewModel,
     ) {
 
+    var timer = viewModel.timer
     val animateFloat by animateFloatAsState(targetValue = numberOfQuestion().toFloat(), label = "progress")
-    val animateFloatTimeOut by animateFloatAsState(targetValue = timer().toFloat(), label = "timeout")
+    val animateFloatTimeOut by animateFloatAsState(targetValue = timer.toFloat() , label = "timeout")
 
     Row(
         modifier = modifier
@@ -118,10 +124,13 @@ fun PaintsHeader(
                             size.height * 0.5f - sizeProgress * 0.5f
                         )
                     )
+
+                    val dogree = animateFloatTimeOut/maxTime * 100f
+                    val sweepAngle = dogree/100f * 360
                     drawArc(
                         color = Color(0xFF03A9F4),
                         startAngle = 270f,
-                        sweepAngle = animateFloatTimeOut ,
+                        sweepAngle = sweepAngle,
                         useCenter = false,
                         size = Size(sizeProgress, sizeProgress),
                         style = Stroke(
@@ -138,7 +147,7 @@ fun PaintsHeader(
             contentAlignment = Alignment.Center
         ) {
             Text(
-                text = timer().toString(),
+                text = viewModel.timer.toString(),
                 modifier = Modifier.padding(8.dp),
                 fontSize = 20.sp,
                 fontWeight = FontWeight.W400,
@@ -147,13 +156,4 @@ fun PaintsHeader(
         }
 
     }
-}
-
-@Preview
-@Composable
-fun PaintsHeaderPreview() {
-    PaintsHeader(
-        modifier = Modifier.fillMaxWidth(),
-        targetPaint = {1}, numberOfQuestion = {0}, timer = {1}
-    )
 }

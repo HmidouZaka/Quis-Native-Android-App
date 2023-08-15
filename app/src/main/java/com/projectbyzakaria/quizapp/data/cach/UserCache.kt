@@ -25,6 +25,11 @@ class UserCache(context: Context) : Caches {
     private val currentLevelKey = intPreferencesKey("current")
 
 
+    override suspend fun setCurrentUserLevel(level: Int) {
+        dataStore.edit {
+            it[currentLevelKey] = level
+        }
+    }
     override suspend fun getCurrentUserLevel(): Flow<UserCache> {
         return dataStore.data.map {
             val paints = listOf(

@@ -11,10 +11,16 @@ class DataStore {
 
     private val Context.dataStore: DataStore<Preferences> by preferencesDataStore("user_caches")
 
+
     companion object {
+        private var dataStoreNullable : DataStore<Preferences>? = null
         fun getDataStore(context: Context): DataStore<Preferences> {
             return DataStore().run {
-                context.dataStore
+                dataStoreNullable?.let {store ->
+                   return@run store
+                }
+                dataStoreNullable  = context.dataStore
+                return@run context.dataStore
             }
         }
 

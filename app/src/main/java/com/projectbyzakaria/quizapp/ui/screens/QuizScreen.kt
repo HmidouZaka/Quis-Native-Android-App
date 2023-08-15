@@ -30,10 +30,12 @@ import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.TextUnitType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.ViewModel
 import com.projectbyzakaria.quizapp.R
 import com.projectbyzakaria.quizapp.model.QuizQuestion
 import com.projectbyzakaria.quizapp.ui.components.PaintsHeader
 import com.projectbyzakaria.quizapp.ui.components.SuggestionComponent
+import com.projectbyzakaria.quizapp.ui.viewmodels.QuizViewModel
 import com.projectbyzakaria.quizapp.utils.SuggestionState
 
 @Composable
@@ -43,7 +45,7 @@ fun QuizScreen(
     onClickNextQuestion:()->Unit,
     numberOfQuestion: ()->Int,
     targetPaint: ()->Int,
-    timer: ()->Int,
+    viewModel: QuizViewModel,
     onSubmit: (isSuccess:Boolean)->Unit,
     isLastQuestion: Boolean = false
 ) {
@@ -60,7 +62,8 @@ fun QuizScreen(
                 .padding(8.dp),
             numberOfQuestion = numberOfQuestion,
             targetPaint = targetPaint,
-            timer = timer
+            viewModel = viewModel,
+            maxTime = viewModel.maxTime
         )
         Spacer(modifier = Modifier.height(10.dp))
         Text(
@@ -158,21 +161,4 @@ fun QuizScreen(
         }
 
     }
-}
-
-
-@Preview(showBackground = true)
-@Composable
-fun QuizScreenPreview() {
-    QuizScreen(
-        Modifier.fillMaxSize(), QuizQuestion(
-            id = 1,
-            questions = "How old are you ?",
-            correctAnswerIndex = 1,
-            suggestion = listOf("4", "20", "5", "30"),
-            isMultipleCorrectAnswer = false
-        ),
-        isLastQuestion = false, onClickNextQuestion = {},
-        targetPaint = {1}, numberOfQuestion = {0}, timer = {100}, onSubmit = {}
-    )
 }
