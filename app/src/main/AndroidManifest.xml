@@ -26,6 +26,9 @@
         <activity android:name=".ui.activities.QuizActivity"
             android:theme="@style/Theme.QuizApp"
             android:exported="false"/>
+
+
+        <profileable android:shell="true"/>
     </application>
 
 </manifest>

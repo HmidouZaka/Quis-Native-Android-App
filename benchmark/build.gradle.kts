@@ -1,3 +1,5 @@
+import com.android.build.api.dsl.ManagedVirtualDevice
+
 plugins {
     id("com.android.test")
     id("org.jetbrains.kotlin.android")
@@ -31,6 +33,19 @@ android {
             isDebuggable = true
             signingConfig = getByName("debug").signingConfig
             matchingFallbacks += listOf("release")
+            proguardFile("benchmark-rules.pro")
+        }
+    }
+
+    testOptions {
+        managedDevices {
+            devices {
+                create ("pixel6Api31", ManagedVirtualDevice::class) {
+                    device = "Pixel 6"
+                    apiLevel = 31
+                    systemImageSource = "aosp"
+                }
+            }
         }
     }
 
