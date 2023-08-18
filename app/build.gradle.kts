@@ -4,6 +4,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        create("release") {
+            storeFile = file("C:\\MyProgacte1\\key_stors\\quizapp.jks")
+            storePassword = "123456789"
+            keyAlias = "key0"
+            keyPassword = "123456789"
+        }
+    }
     namespace = "com.projectbyzakaria.quizapp"
     compileSdk = 33
 
@@ -28,6 +36,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
         }
         create("benchmark") {
             initWith(buildTypes.getByName("release"))

@@ -28,27 +28,4 @@ class ExampleStartupBenchmark {
         startActivityAndWait()
     }
 
-    @Test
-    fun startupFRamse() = benchmarkRule.measureRepeated(
-        packageName = "com.projectbyzakaria.quizapp",
-        metrics = listOf(StartupTimingMetric(),FrameTimingMetric()),
-        iterations = 5,
-        startupMode = StartupMode.COLD
-    ) {
-        pressHome()
-        startActivityAndWait()
-    }
-
-    @Test
-    fun startQuiz() = benchmarkRule.measureRepeated(
-        packageName = "com.projectbyzakaria.quizapp",
-        metrics = listOf(FrameTimingMetric(),FrameTimingGfxInfoMetric()),
-        iterations = 5,
-        startupMode = StartupMode.COLD
-    ) {
-        pressHome()
-        startActivityAndWait()
-        startQuiz()
-    }
-
 }

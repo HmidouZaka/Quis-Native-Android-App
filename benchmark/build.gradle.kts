@@ -6,6 +6,10 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        create("release") {
+        }
+    }
     namespace = "com.projectbyzakaria.benchmark"
     compileSdk = 33
 

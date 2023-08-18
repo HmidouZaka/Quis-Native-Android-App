@@ -21,9 +21,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.testTagsAsResourceId
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.TextUnit
@@ -38,19 +42,22 @@ import com.projectbyzakaria.quizapp.ui.components.SuggestionComponent
 import com.projectbyzakaria.quizapp.ui.viewmodels.QuizViewModel
 import com.projectbyzakaria.quizapp.utils.SuggestionState
 
+@OptIn(ExperimentalComposeUiApi::class)
 @Composable
 fun QuizScreen(
     modifier: Modifier = Modifier,
     question: QuizQuestion,
-    onClickNextQuestion:()->Unit,
-    numberOfQuestion: ()->Int,
-    targetPaint: ()->Int,
+    onClickNextQuestion: () -> Unit,
+    numberOfQuestion: () -> Int,
+    targetPaint: () -> Int,
     viewModel: QuizViewModel,
-    onSubmit: (isSuccess:Boolean)->Unit,
-    isLastQuestion: Boolean = false
+    onSubmit: (isSuccess: Boolean) -> Unit,
+    isLastQuestion: Boolean = false,
 ) {
     Column(
-        modifier = modifier,
+        modifier = modifier.semantics {
+            this.testTagsAsResourceId = true
+        },
     ) {
 
         Spacer(modifier = Modifier.height(20.dp))
@@ -91,14 +98,14 @@ fun QuizScreen(
                     SuggestionState.SELECTED
                 } else if (selectedIndex != index && answerState == SuggestionState.NATING) {
                     SuggestionState.NATING
-                }  else if (selectedIndex == index && answerState == SuggestionState.SUCCESS) {
+                } else if (selectedIndex == index && answerState == SuggestionState.SUCCESS) {
                     SuggestionState.SUCCESS
-                }  else if (selectedIndex == index && answerState == SuggestionState.ERROR) {
+                } else if (selectedIndex == index && answerState == SuggestionState.ERROR) {
                     SuggestionState.ERROR
                 } else {
                     SuggestionState.NATING
                 },
-                modifier = Modifier
+                modifier = Modifier.testTag("option$index")
                     .padding(8.dp)
                     .fillMaxWidth()
             ) {
@@ -108,29 +115,29 @@ fun QuizScreen(
             }
         }
 
-        if (answerState == SuggestionState.ERROR || answerState == SuggestionState.SUCCESS){
-                Button(
-                    onClick = {
-                        onClickNextQuestion()
-                        answerState = SuggestionState.NATING
-                        selectedIndex = null
-                    },
-                    modifier = Modifier
-                        .padding(8.dp)
-                        .fillMaxWidth(),
-                    shape = RoundedCornerShape(12.dp),
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = Color(0xFF00C503)
-                    )
-                ) {
-                    val text = if (isLastQuestion) "Show Result" else "Next"
-                    Text(
-                        text = text,
-                        fontSize = 18.sp
-                    )
+        if (answerState == SuggestionState.ERROR || answerState == SuggestionState.SUCCESS) {
+            Button(
+                onClick = {
+                    onClickNextQuestion()
+                    answerState = SuggestionState.NATING
+                    selectedIndex = null
+                },
+                modifier = Modifier.testTag("next")
+                    .padding(8.dp)
+                    .fillMaxWidth(),
+                shape = RoundedCornerShape(12.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFF00C503)
+                )
+            ) {
+                val text = if (isLastQuestion) "Show Result" else "Next"
+                Text(
+                    text = text,
+                    fontSize = 18.sp
+                )
 
-                }
-        }else{
+            }
+        } else {
             AnimatedVisibility(visible = selectedIndex != null) {
                 Button(
                     onClick = {
@@ -142,7 +149,7 @@ fun QuizScreen(
                             answerState = SuggestionState.ERROR
                         }
                     },
-                    modifier = Modifier
+                    modifier = Modifier.testTag("submit")
                         .padding(8.dp)
                         .fillMaxWidth(),
                     shape = RoundedCornerShape(12.dp),

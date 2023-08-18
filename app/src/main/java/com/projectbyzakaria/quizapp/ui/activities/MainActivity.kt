@@ -13,7 +13,10 @@ import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.testTagsAsResourceId
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.ViewModelInitializer
 import com.projectbyzakaria.quizapp.data.cach.UserCache
@@ -24,9 +27,15 @@ import com.projectbyzakaria.quizapp.ui.viewmodels.HomeViewModel
 import com.projectbyzakaria.quizapp.utils.ScreenState
 
 class MainActivity : ComponentActivity() {
-    val viewModel by viewModels<HomeViewModel>{
-        ViewModelProvider.Factory.from(ViewModelInitializer(HomeViewModel::class.java) { HomeViewModel(UserCache(this@MainActivity)) })
+    val viewModel by viewModels<HomeViewModel> {
+        ViewModelProvider.Factory.from(ViewModelInitializer(HomeViewModel::class.java) {
+            HomeViewModel(
+                UserCache(this@MainActivity)
+            )
+        })
     }
+
+    @OptIn(ExperimentalComposeUiApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -34,19 +43,23 @@ class MainActivity : ComponentActivity() {
 
                 val state by viewModel.homeScreenState.collectAsState()
 
-                if (state is ScreenState.Success ){
+                if (state is ScreenState.Success) {
                     val dataCaches = (state as ScreenState.Success).caches
                     HomeScreen(
-                        modifier = Modifier.fillMaxSize(),
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .semantics {
+                                this.testTagsAsResourceId = true
+                            },
                         levelNumber = dataCaches.currentLevel,
                         paints = dataCaches.paints
                     ) {
-                        startActivity(Intent(this,QuizActivity::class.java).apply {
-                            putExtra("level_click",it)
-                            putExtra("cache_level",dataCaches.currentLevel)
+                        startActivity(Intent(this, QuizActivity::class.java).apply {
+                            putExtra("level_click", it)
+                            putExtra("cache_level", dataCaches.currentLevel)
                         })
                     }
-                }else if (state is ScreenState.Loading){
+                } else if (state is ScreenState.Loading) {
                     LoadingComponent(Modifier.fillMaxSize())
                 }
 

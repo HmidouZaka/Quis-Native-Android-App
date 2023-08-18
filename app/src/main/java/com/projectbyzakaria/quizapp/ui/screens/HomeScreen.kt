@@ -28,6 +28,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
@@ -57,7 +58,7 @@ fun HomeScreen(
                 val borderColor = if (levelNumber >= it +1) Color(0xFF4CAF50) else Color(0xFF505050)
 
                 LevelItem(
-                    modifier = Modifier
+                    modifier = Modifier.testTag("test$it")
                         .fillMaxWidth()
                         .clip(RoundedCornerShape(8.dp))
                         .background(if (levelNumber >= (it +1)) Color(0xFF4CAF50) else Color(0xFFC7C7C7))
