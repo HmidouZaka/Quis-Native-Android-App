@@ -14,6 +14,7 @@
         <li><a href="https://developer.android.com/topic/libraries/architecture/datastore">DataStore</a> for saving user data locally, such as user level and points.</li>
         <li><a href="https://developer.android.com/topic/libraries/architecture/viewmodel">MVVM</a> as the design pattern.</li>
         <li><a href="https://developer.android.com/topic/architecture">Clean architecture</a> for better code and project architecture.</li>
+        <li><a href="https://developer.android.com/topic/performance/benchmarking/macrobenchmark-overview">Macrobenchmark Test</a> for test performance in app</li>
         <li>And more...</li>
     </ul>
 </div>
