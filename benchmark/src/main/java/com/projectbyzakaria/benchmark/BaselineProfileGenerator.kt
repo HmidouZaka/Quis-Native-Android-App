@@ -15,8 +15,8 @@ class BaselineProfileGenerator {
 
 
     @Test
-    fun start() =
-        baselineProfileRule.collectBaselineProfile(packageName = "com.projectbyzakaria.quizapp") {
+    fun start() = baselineProfileRule.collectBaselineProfile(packageName = "com.projectbyzakaria.quizapp") {
+            pressHome()
             startActivityAndWait()
         }
 
