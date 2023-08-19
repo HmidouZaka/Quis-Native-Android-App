@@ -18,32 +18,8 @@
     </ul>
 
           <h3>🛠️ Tools</h3>
-    <div style="display: flex; justify-content: space-between;">
-   
-    <div style="flex: 1; padding: 10px;">
-        <div style="display: flex; flex-direction: column;">
-            <img src="image_url_1.jpg" alt="Image 1" width="100%" height="auto">
-            <h4 style="text-align: right;">Title 1</h4>
-            <p style="text-align: right;">Description 1</p>
-        </div>
-    </div>
-    
-    <div style="flex: 1; padding: 10px;">
-        <div style="display: flex; flex-direction: column;">
-            <img src="image_url_2.jpg" alt="Image 2" width="100%" height="auto">
-            <h4 style="text-align: right;">Title 2</h4>
-            <p style="text-align: right;">Description 2</p>
-        </div>
-    </div>
-    
-    <div style="flex: 1; padding: 10px;">
-        <div style="display: flex; flex-direction: column;">
-            <img src="image_url_3.jpg" alt="Image 3" width="100%" height="auto">
-            <h4 style="text-align: right;">Title 3</h4>
-            <p style="text-align: right;">Description 3</p>
-        </div>
-    </div>
-</div>
+          <div></div>
+
 </div>
 
 ---
