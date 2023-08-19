@@ -23,9 +23,7 @@
                This is a simple overview of the tools I used in this project, such as Android Studio, Git, GitHub, and ChatGPT.
            </p>
  <div align="center">
-        
-         
-         <table>
+      <table>
                  <tr>
                          <td width="30%">
                                  <div align="center">
