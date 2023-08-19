@@ -25,7 +25,7 @@
                          <td>
                                  <div align="center">
                                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"   width="30%" alt="Image 1" >
-                                      <h3><a href="https://developer.android.com/studio">Chat GPT</a></h3>
+                                      <h3><a href="https://chat.openai.com/">Chat GPT</a></h3>
                                       <p>
                                              I used ChatGPT to generate 200 questions to optimize production time. 
                                       </p>
