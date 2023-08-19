@@ -42,6 +42,11 @@
               </p>
       </div>  
  </div>
+ | ![Image 1](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png) | ![Image 2](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png) | ![Image 3](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png) |
+| --- | --- | --- |
+| **Chat GPT** | **Chat GPT** | **Chat GPT** |
+| I used ChatGPT to generate 200 questions to optimize production time. | I used ChatGPT to generate 200 questions to optimize production time. | I used ChatGPT to generate 200 questions to optimize production time. |
+
 
 ---
 
