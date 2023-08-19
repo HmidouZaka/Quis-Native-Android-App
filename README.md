@@ -16,10 +16,9 @@
         <li><a href="https://developer.android.com/topic/architecture">Clean architecture</a> for better code and project architecture.</li>
         <li>And more...</li>
     </ul>
-
-    <h3>🛠️ Tools </h3>
-
 </div>
+
+ <h1>🛠️ Tools </h1>
 
 ---
 
