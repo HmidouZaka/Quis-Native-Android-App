@@ -17,8 +17,7 @@
         <li>And more...</li>
     </ul>
 
-          <h3>🛠️ Tools</h3>
-          <div></div>
+    <h3>🛠️ Tools </h3>
 
 </div>
 
