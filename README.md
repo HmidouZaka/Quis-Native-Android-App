@@ -22,7 +22,7 @@
  <div align="center">
          <table>
                  <tr>
-                         <td>
+                         <td width="30%">
                                  <div align="center">
                                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"   width="30%" alt="Image 1" >
                                       <h3><a href="https://chat.openai.com/">Chat GPT</a></h3>
@@ -31,7 +31,7 @@
                                       </p>
                                  </div>    
                          </td>
-                           <td>
+                           <td width="30%">
                                  <div align="center">
                                       <img src="https://avatars.githubusercontent.com/u/18133?s=200&v=4"   width="30%" alt="Image 1" >
                                          <h3><a href="https://git-scm.com/">Git</a></h3>
@@ -40,7 +40,7 @@
                                       </p>
                                  </div>    
                          </td>
-                           <td>
+                           <td width="30%">
                                  <div align="center">
                                       <img src="https://developer.android.com/static/studio/images/new-studio-logo-1.png"   width="30%" alt="Image 1" >
                                       <h3><a href="https://developer.android.com/studio">Android Studio</a></h3>
