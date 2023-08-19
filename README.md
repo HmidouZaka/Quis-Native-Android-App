@@ -11,9 +11,9 @@
     </p>
     <h3>In this app, I used</h3>
     <ul>
-        <li><a>DataStore</a> for saving user data locally, such as user level and points.</li>
-        <li><a>MVVM</a> as the design pattern.</li>
-        <li><a>Clean architecture</a> for better code and project architecture.</li>
+        <li><a href="https://developer.android.com/topic/libraries/architecture/datastore">DataStore</a> for saving user data locally, such as user level and points.</li>
+        <li><a href="https://developer.android.com/topic/libraries/architecture/viewmodel">MVVM</a> as the design pattern.</li>
+        <li><a href="https://developer.android.com/topic/architecture">Clean architecture</a> for better code and project architecture.</li>
         <li>And more...</li>
     </ul>
 </div>
