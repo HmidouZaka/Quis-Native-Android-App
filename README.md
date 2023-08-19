@@ -23,7 +23,7 @@
          <table>
                  <tr>
                          <td>
-                                 <div>
+                                 <div align="center">
                                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"   width="30%" alt="Image 1" >
                                       <h3>Chat GPT</h3>
                                       <p>
@@ -32,7 +32,7 @@
                                  </div>    
                          </td>
                            <td>
-                                 <div>
+                                 <div align="center">
                                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"   width="30%" alt="Image 1" >
                                       <h3>Chat GPT</h3>
                                       <p>
@@ -41,7 +41,7 @@
                                  </div>    
                          </td>
                            <td>
-                                 <div>
+                                 <div align="center">
                                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"   width="30%" alt="Image 1" >
                                       <h3>Chat GPT</h3>
                                       <p>
