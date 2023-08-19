@@ -54,6 +54,41 @@
 
  </div>
 
+ <h1>💪 I used </h1>
+ <div align="center">
+         <table>
+                 <tr>
+                         <td width="30%">
+                                 <div align="center">
+                                      <img src="https://3.bp.blogspot.com/-VVp3WvJvl84/X0Vu6EjYqDI/AAAAAAAAPjU/ZOMKiUlgfg8ok8DY8Hc-ocOvGdB0z86AgCLcBGAsYHQ/s1600/jetpack%2Bcompose%2Bicon_RGB.png"   width="30%" alt="Image 1" >
+                                      <h3><a href="https://chat.openai.com/">Jetpack Compose</a></h3>
+                                      <p>
+                                             I used ChatGPT to generate 200 questions to optimize production time. 
+                                      </p>
+                                 </div>    
+                         </td>
+                           <td width="30%">
+                                 <div align="center">
+                                      <img src="https://avatars.githubusercontent.com/u/18133?s=200&v=4"   width="30%" alt="Image 1" >
+                                         <h3><a href="https://git-scm.com/">Git</a></h3>
+                                      <p>
+                                            I used Git to manage versions and updates in this project.
+                                      </p>
+                                 </div>    
+                         </td>
+                           <td width="30%">
+                                 <div align="center">
+                                      <img src="https://developer.android.com/static/studio/images/new-studio-logo-1.png"   width="30%" alt="Image 1" >
+                                      <h3><a href="https://developer.android.com/studio">Android Studio</a></h3>
+                                      <p>
+                                             I used Android Studio to create this app. It is an important tool for every Android developer
+                                      </p>
+                                 </div>    
+                         </td>
+                 </tr>
+         </table>
+
+ </div>
 
 ---
 
