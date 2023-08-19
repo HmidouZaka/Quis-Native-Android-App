@@ -5,10 +5,17 @@
         <h1 >👋 Native Android Quiz Application</h1>
 </div>
 <div>
-        <h3>Description</h3>
-        <p>
-              This is a simple source code for a basic quiz app created by Zakaria Hmidou using Jetpack Compose and Android Studio. The main programming language used is Kotlin. In this app, there are a total of 200 questions distributed across 10 levels.               In each level, you must answer a minimum of 10 questions and can answer a maximum of 20 questions.  
-        </p>
+    <h3>🧐 Description</h3>
+    <p>
+        This is a simple source code for a basic quiz app created by Zakaria Hmidou using Jetpack Compose and Android Studio. The main programming language used is Kotlin. In this app, there are a total of 200 questions distributed across 10 levels. In each level, you must answer a minimum of 10 questions and can answer a maximum of 20 questions.
+    </p>
+    <h3>In this app, I used</h3>
+    <ul>
+        <li><a>DataStore</a> for saving user data locally, such as user level and points.</li>
+        <li><a>MVVM</a> as the design pattern.</li>
+        <li><a>Clean architecture</a> for better code and project architecture.</li>
+        <li>And more...</li>
+    </ul>
 </div>
 ---
 <h1 >😎 Preview</h1>
