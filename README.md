@@ -101,8 +101,9 @@ I used Jetpack Compose in this project to create a beautiful UI/UX and achieve o
 
 ---
 
- <h1>💪 flow diagram </h1>
+ <h1>😊 flow diagram </h1>
 
  ![Beige Colorful Minimal Flowchart Infographic Graph](https://github.com/HmidouZaka/Quis-Native-Android-App/assets/94437384/d90dd8e9-ddd1-4bc1-a2af-d200feb5e33e)
 
+---
 
