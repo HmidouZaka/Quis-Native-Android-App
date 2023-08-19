@@ -20,32 +20,39 @@
 
  <h1>🛠️ Tools </h1>
  <div align="center">
-      <div>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"   width="30%" alt="Image 1" >
-              <h3>Chat GPT</h3>
-              <p>
-                     I used ChatGPT to generate 200 questions to optimize production time. 
-              </p>
-      </div>  
-           <div>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"   width="30%" alt="Image 1" >
-              <h3>Chat GPT</h3>
-              <p>
-                     I used ChatGPT to generate 200 questions to optimize production time. 
-              </p>
-      </div>  
-              <div>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"   width="30%" alt="Image 1" >
-              <h3>Chat GPT</h3>
-              <p>
-                     I used ChatGPT to generate 200 questions to optimize production time. 
-              </p>
-      </div>  
+         <table>
+                 <tr>
+                         <td>
+                                 <div>
+                                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"   width="30%" alt="Image 1" >
+                                      <h3>Chat GPT</h3>
+                                      <p>
+                                             I used ChatGPT to generate 200 questions to optimize production time. 
+                                      </p>
+                                 </div>    
+                         </td>
+                           <td>
+                                 <div>
+                                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"   width="30%" alt="Image 1" >
+                                      <h3>Chat GPT</h3>
+                                      <p>
+                                             I used ChatGPT to generate 200 questions to optimize production time. 
+                                      </p>
+                                 </div>    
+                         </td>
+                           <td>
+                                 <div>
+                                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"   width="30%" alt="Image 1" >
+                                      <h3>Chat GPT</h3>
+                                      <p>
+                                             I used ChatGPT to generate 200 questions to optimize production time. 
+                                      </p>
+                                 </div>    
+                         </td>
+                 </tr>
+         </table>
+
  </div>
- | ![Image 1](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png) | ![Image 2](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png) | ![Image 3](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png) |
-| --- | --- | --- |
-| **Chat GPT** | **Chat GPT** | **Chat GPT** |
-| I used ChatGPT to generate 200 questions to optimize production time. | I used ChatGPT to generate 200 questions to optimize production time. | I used ChatGPT to generate 200 questions to optimize production time. |
 
 
 ---
