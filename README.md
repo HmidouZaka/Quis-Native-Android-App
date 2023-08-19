@@ -20,6 +20,10 @@
 
  <h1>🛠️ Tools </h1>
  <div align="center">
+           <p>
+               This is a simple overview of the tools I used in this project, such as Android Studio, Git, GitHub, and ChatGPT.
+           </p>
+         
          <table>
                  <tr>
                          <td width="30%">
@@ -54,7 +58,12 @@
 
  </div>
 
+---
+
+
  <h1>💪 I used </h1>
+<p>
+I used Jetpack Compose in this project to create beautiful UI/UX and achieve optimal performance for animations. It's a powerful way to design the user interface for any native Android app.</p>
  <div align="center">
          <table>
                  <tr>
