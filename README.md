@@ -25,7 +25,7 @@
                          <td>
                                  <div align="center">
                                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"   width="30%" alt="Image 1" >
-                                      <h3>Chat GPT</h3>
+                                      <h3><a href="https://developer.android.com/studio">Chat GPT</a></h3>
                                       <p>
                                              I used ChatGPT to generate 200 questions to optimize production time. 
                                       </p>
@@ -33,19 +33,19 @@
                          </td>
                            <td>
                                  <div align="center">
-                                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"   width="30%" alt="Image 1" >
-                                      <h3>Chat GPT</h3>
+                                      <img src="https://avatars.githubusercontent.com/u/18133?s=200&v=4"   width="30%" alt="Image 1" >
+                                         <h3><a href="https://git-scm.com/">Git</a></h3>
                                       <p>
-                                             I used ChatGPT to generate 200 questions to optimize production time. 
+                                            I used Git to manage versions and updates in this project.
                                       </p>
                                  </div>    
                          </td>
                            <td>
                                  <div align="center">
-                                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"   width="30%" alt="Image 1" >
-                                      <h3>Chat GPT</h3>
+                                      <img src="https://developer.android.com/static/studio/images/new-studio-logo-1.png"   width="30%" alt="Image 1" >
+                                      <h3><a href="https://developer.android.com/studio">Android Studio</a></h3>
                                       <p>
-                                             I used ChatGPT to generate 200 questions to optimize production time. 
+                                             I used Android Studio to create this app. It is an important tool for every Android developer
                                       </p>
                                  </div>    
                          </td>
