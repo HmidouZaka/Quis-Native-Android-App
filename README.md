@@ -2,7 +2,12 @@
 
 
 <div align="center">
-        <h1 >Native Android Quiz Application</h1>
+        <h1 >👋 Native Android Quiz Application</h1>
 </div>
 
+---
+<h1 >👋 Preview</h1>
+![ezgif-5-75da480c25](https://github.com/HmidouZaka/Quis-Native-Android-App/assets/94437384/d2a936ca-4d2c-4b87-9af8-a49f10e7d9d7)
+![ezgif-5-e4a2f4c64a](https://github.com/HmidouZaka/Quis-Native-Android-App/assets/94437384/807e272e-2740-437a-8045-1c36e1aa4ca1)
+![ezgif-5-a562ead8d5](https://github.com/HmidouZaka/Quis-Native-Android-App/assets/94437384/c2d4b054-b977-4ab8-808c-26ce9585a888)
 ---
