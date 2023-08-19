@@ -19,10 +19,11 @@
 </div>
 
  <h1>🛠️ Tools </h1>
- <div align="center">
-           <p>
+    <p>
                This is a simple overview of the tools I used in this project, such as Android Studio, Git, GitHub, and ChatGPT.
            </p>
+ <div align="center">
+        
          
          <table>
                  <tr>
