@@ -62,34 +62,25 @@
 
  <h1>💪 I used </h1>
 <p>
-I used Jetpack Compose in this project to create beautiful UI/UX and achieve optimal performance for animations. It's a powerful way to design the user interface for any native Android app.</p>
+I used Jetpack Compose in this project to create a beautiful UI/UX and achieve optimal performance for animations. It's a powerful way to design the user interface for any native Android app. Additionally, I used Kotlin as the main language in this app. Kotlin is considered the best language for Android development and is supported by Google</p>
  <div align="center">
          <table>
                  <tr>
-                         <td width="30%">
+                         <td width="50%">
                                  <div align="center">
                                       <img src="https://3.bp.blogspot.com/-VVp3WvJvl84/X0Vu6EjYqDI/AAAAAAAAPjU/ZOMKiUlgfg8ok8DY8Hc-ocOvGdB0z86AgCLcBGAsYHQ/s1600/jetpack%2Bcompose%2Bicon_RGB.png"   width="30%" alt="Image 1" >
-                                      <h3><a href="https://chat.openai.com/">Jetpack Compose</a></h3>
+                                      <h3><a href="https://developer.android.com/jetpack/compose">Jetpack Compose</a></h3>
                                       <p>
                                              I used ChatGPT to generate 200 questions to optimize production time. 
                                       </p>
                                  </div>    
                          </td>
-                           <td width="30%">
+                           <td width="50%">
                                  <div align="center">
-                                      <img src="https://avatars.githubusercontent.com/u/18133?s=200&v=4"   width="30%" alt="Image 1" >
-                                         <h3><a href="https://git-scm.com/">Git</a></h3>
+                                      <img src="https://zakhcodelabs.files.wordpress.com/2020/08/icon-kotlin-1024.png"   width="30%" alt="Image 1" >
+                                         <h3><a href="https://kotlinlang.org/">Kotlin</a></h3>
                                       <p>
-                                            I used Git to manage versions and updates in this project.
-                                      </p>
-                                 </div>    
-                         </td>
-                           <td width="30%">
-                                 <div align="center">
-                                      <img src="https://developer.android.com/static/studio/images/new-studio-logo-1.png"   width="30%" alt="Image 1" >
-                                      <h3><a href="https://developer.android.com/studio">Android Studio</a></h3>
-                                      <p>
-                                             I used Android Studio to create this app. It is an important tool for every Android developer
+                                           I used Kotlin as the main language in this app.
                                       </p>
                                  </div>    
                          </td>
